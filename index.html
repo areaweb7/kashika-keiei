@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「可視化経営」実践会 | 御社に足りないのは経営の全体図です</title>
+    <meta name="description" content="社員のやる気に頼る経営は、もう終わり。わずか3時間で組織の「地図」を描き直す可視化経営の実践会。無料相談受付中。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Original Sky Blue (Preserved for Hero)
+                        'original-blue': {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        },
+                        // New Deep Royal Blue (Correction: 600 is Navy #000080)
+                        'royal-blue': {
+                            50: '#f0f4ff',
+                            100: '#e0e8ff',
+                            200: '#c0d0ff',
+                            300: '#90aaff',
+                            400: '#5070ff',
+                            500: '#3040e0',
+                            600: '#000080', // Target Navy
+                            700: '#000070',
+                            800: '#000060', // Darker shade
+                            900: '#000050',
+                            950: '#000030',
+                        },
+                        'champagne': {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans JP', 'sans-serif'],
+                        'serif': ['Noto Serif JP', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-gold {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+        }
+
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-royal-blue-900 font-sans antialiased">
+
+    <!-- ========================================
+         1. HEADER
+    ======================================== -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-original-blue-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-3 md:px-4 py-2 md:py-3 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="images/logo2.png" alt="「可視化経営」実践会" class="h-10 md:h-16 w-auto">
+            </a>
+            <!-- CTA Button -->
+            <a href="#contact"
+                class="gradient-gold text-white font-bold px-3 md:px-6 py-2 md:py-3 rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 text-xs md:text-base whitespace-nowrap">
+                <span class="hidden md:inline">無料相談に申し込む</span>
+                <span class="md:hidden">無料相談</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ========================================
+         2. HERO SECTION
+    ======================================== -->
+    <!-- Mobile Hero (Image + Text Below) -->
+    <section class="md:hidden pt-14">
+        <!-- Hero Image (Mobile) -->
+        <div class="w-full">
+            <img src="images/hero-workshop.png" alt="可視化経営の実践会風景" class="w-full h-auto object-cover">
+        </div>
+        <!-- Content (Mobile) -->
+        <div class="bg-original-blue-700 px-4 py-8">
+            <!-- Main Catch -->
+            <h1 class="text-2xl font-serif font-bold mb-4 text-white" style="line-height: 1.5;">
+                社員の<span class="text-champagne-400">「やる気」</span>に頼る経営は、<br>
+                もう終わりにしませんか？
+            </h1>
+
+            <!-- Sub Catch -->
+            <p class="text-lg text-white/90 mb-4 leading-relaxed">
+                御社に足りないのは、能力ではなく<br>
+                <strong class="text-champagne-300">「経営の全体図（地図）」</strong>です。
+            </p>
+
+            <!-- Lead Text -->
+            <p class="text-sm text-white/80 mb-6 leading-relaxed border-l-4 border-champagne-500 pl-3">
+                意見を求めた途端に沈黙する会議…<br>
+                原因は「社員」にあるのではありません。<br>
+                全員が共有できる「地図」がないことでした。
+            </p>
+
+            <!-- CTA Button -->
+            <div>
+                <a href="#contact"
+                    class="inline-block gradient-gold text-white font-bold text-base px-6 py-3 rounded-lg shadow-xl">
+                    まずは無料相談で<br>「地図」の作り方を聞く
+                </a>
+                <p class="text-white/50 text-xs mt-3">（3分で入力完了）</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desktop Hero (Background Image Overlay) -->
+    <section class="hidden md:flex relative min-h-screen items-center pt-20">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="images/hero-workshop.png" alt="" class="w-full h-full object-cover object-center">
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-original-blue-800/95 via-original-blue-700/80 to-transparent">
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 w-full max-w-4xl mx-auto px-4 py-16">
+            <!-- Main Catch -->
+            <h1 class="text-4xl lg:text-5xl font-serif font-bold mb-6 text-white" style="line-height: 1.4;">
+                社員の<span class="text-champagne-400">「やる気」</span>に頼る経営は、<br>
+                もう終わりにしませんか？
+            </h1>
+
+            <!-- Sub Catch -->
+            <p class="text-2xl text-white/90 mb-6 leading-relaxed">
+                御社に足りないのは、能力ではなく<br>
+                <strong class="text-champagne-300">「経営の全体図（地図）」</strong>です。
+            </p>
+
+            <!-- Lead Text -->
+            <p class="text-lg text-white/70 mb-10 leading-relaxed border-l-4 border-champagne-500 pl-4">
+                意見を求めた途端に沈黙する会議…<br>
+                原因は「社員」にあるのではありません。<br>
+                全員が共有できる「地図」がないことでした。
+            </p>
+
+            <!-- CTA Button -->
+            <div>
+                <a href="#contact"
+                    class="inline-block gradient-gold text-white font-bold text-lg px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
+                    まずは無料相談で「地図」の作り方を聞く
+                </a>
+                <p class="text-white/50 text-sm mt-3">（3分で入力完了）</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         3. PROBLEM SECTION (共感・すれ違い)
+    ======================================== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Section Heading -->
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-4 leading-snug text-royal-blue-900">
+                    「もっと話し合おう」とするから、<br>
+                    話がまとまらないのです。
+                </h2>
+                <p class="text-center text-royal-blue-700 text-lg">御社では、こんな「すれ違い」が起きていませんか？</p>
+            </div>
+
+            <!-- Block A: CEO's View -->
+            <div class="mb-12">
+                <div class="flex flex-col md:flex-row gap-8 items-stretch">
+                    <div class="w-full md:w-2/5">
+                        <img src="images/ceo-meeting-v4.png" alt="書類を前に頭を抱える社長"
+                            class="w-full h-full object-cover rounded-xl shadow-lg">
+                    </div>
+                    <div class="w-full md:w-3/5">
+                        <div class="bg-stone-100 rounded-xl p-6 md:p-8 h-full">
+                            <h3 class="text-xl font-bold text-royal-blue-800 mb-4 flex items-center gap-3">
+                                <span
+                                    class="w-10 h-10 bg-royal-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">A</span>
+                                社長の悩み（見えている景色）
+                            </h3>
+                            <ul class="space-y-4 text-royal-blue-700">
+                                <li class="flex items-center gap-3">
+                                    <span class="text-champagne-500 text-base leading-relaxed">●</span>
+                                    <span>社員が本音や意見を言ってくれない</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="text-champagne-500 text-base leading-relaxed">●</span>
+                                    <span>話の食い違いで、いつも問題が起きる</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="text-champagne-500 text-base leading-relaxed">●</span>
+                                    <span>現場で起きていることが伝わってこない</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Block B: Employee's View -->
+            <div class="mb-16">
+                <div class="flex flex-col md:flex-row gap-8 items-stretch">
+                    <div class="w-full md:w-2/5">
+                        <img src="images/employees-disengaged.png" alt="冷めた表情の社員たち"
+                            class="w-full h-full object-cover rounded-xl shadow-lg">
+                    </div>
+                    <div class="w-full md:w-3/5">
+                        <div class="bg-champagne-50 rounded-xl p-6 md:p-8 h-full">
+                            <h3 class="text-xl font-bold text-royal-blue-800 mb-4 flex items-center gap-3">
+                                <span
+                                    class="w-10 h-10 bg-champagne-500 text-white rounded-full flex items-center justify-center text-sm font-bold">B</span>
+                                社員・スタッフの本音（見えない景色）
+                            </h3>
+                            <p class="text-royal-blue-700 mb-4 text-sm">一方、現場の社員はこう思っています。</p>
+                            <ul class="space-y-4 text-royal-blue-700">
+                                <li class="flex items-center gap-3">
+                                    <span class="text-champagne-500 text-base leading-relaxed">●</span>
+                                    <span>「提案しても自分の責任と仕事が増えるだけ」</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="text-champagne-500 text-base leading-relaxed">●</span>
+                                    <span>「会議が苦痛。下手な意見を言うと否定される」</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="text-champagne-500 text-base leading-relaxed">●</span>
+                                    <span>「仕事にやりがいを感じられない」</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Closing Message -->
+            <div class="bg-royal-blue-600 rounded-2xl p-8 md:p-10 text-center">
+                <p class="text-white/90 text-lg md:text-xl leading-relaxed mb-6">
+                    社長は「答え」を求めているのに、社員は「保身」を考えている。<br>
+                    <strong class="text-champagne-300">この溝は、いくら話し合っても埋まりません。</strong>
+                </p>
+                <div class="border-t border-white/20 pt-6">
+                    <p class="text-white leading-relaxed">
+                        必要なのは、対話スキルでも情熱でもない。<br>
+                        頭の中にあるモヤモヤを全て紙に出し、<br class="md:hidden">
+                        <strong class="text-champagne-300">目で見てわかるように「整理整頓」すること</strong>です。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         4. COMPARISON SECTION (比較・解決策)
+    ======================================== -->
+    <section class="py-16 md:py-24 bg-stone-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Bridge Text -->
+            <div class="mb-12 text-center">
+                <p class="text-royal-blue-700 text-lg leading-relaxed max-w-2xl mx-auto">
+                    だから私たちは、「話し合い」ではなく<strong class="text-royal-blue-900">「可視化」</strong>という別のアプローチを取ります。
+                </p>
+            </div>
+
+            <!-- Section Heading -->
+            <div class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-4 leading-snug text-royal-blue-900">
+                    なぜ、今までの研修は長続きしないのか？
+                </h2>
+                <p class="text-center text-royal-blue-700 text-lg">「精神論」と「可視化（見える化）」の決定的な違い</p>
+            </div>
+
+            <!-- Visual: Before/After Chaos Map -->
+            <div class="mb-12">
+                <img src="images/Gemini_Generated_Image_wwkorawwkorawwko.jpg" alt="混乱から可視化へのビフォーアフター"
+                    class="w-full max-w-3xl mx-auto rounded-lg shadow-none">
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+                <!-- Left: Traditional Training (×) -->
+                <div class="bg-white rounded-2xl p-6 md:p-8 border-2 border-gray-300 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span
+                            class="w-12 h-12 bg-gray-400 text-white rounded-full flex items-center justify-center font-bold text-2xl">×</span>
+                        <h3 class="text-lg font-bold text-gray-700">一般的な研修<br><span
+                                class="text-sm font-normal">（精神論・会話術）</span></h3>
+                    </div>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-center gap-3">
+                            <span class="text-gray-400 font-bold">×</span>
+                            <span>「意識」や「やる気」を変えようとする</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-gray-400 font-bold">×</span>
+                            <span>声の大きい人の意見ばかり通る</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-gray-400 font-bold">×</span>
+                            <span>その場の盛り上がりで終わる<br class="hidden md:block"><span class="text-sm">（熱が冷める）</span></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right: This Program (◎) -->
+                <div class="bg-white rounded-2xl p-6 md:p-8 border-2 border-champagne-400 shadow-lg relative">
+                    <div
+                        class="absolute -top-3 left-6 bg-champagne-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        おすすめ</div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span
+                            class="w-12 h-12 gradient-gold text-white rounded-full flex items-center justify-center font-bold text-2xl">◎</span>
+                        <h3 class="text-lg font-bold text-royal-blue-800">「可視化経営」実践会</h3>
+                    </div>
+                    <ul class="space-y-4 text-royal-blue-700">
+                        <li class="flex items-center gap-3">
+                            <span class="text-champagne-500 font-bold">✓</span>
+                            <span><strong>「やり方」と「見た目」</strong>を変える</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-champagne-500 font-bold">✓</span>
+                            <span>付箋に書いて貼るだけ<br class="hidden md:block"><span class="text-sm">（全員の意見が出る）</span></span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-champagne-500 font-bold">✓</span>
+                            <span><strong>「1枚の図」として手元に残る</strong>から迷わない</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Conclusion Copy -->
+            <div class="bg-royal-blue-600 rounded-2xl p-8 text-center">
+                <p class="text-white text-lg md:text-xl leading-relaxed">
+                    もう、社員の性格やモチベーションに悩む必要はありません。<br>
+                    <strong class="text-champagne-300">「情報の見せ方」さえ変えれば、組織は勝手に動き出します。</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         5. THREE DELIVERABLES SECTION (3つの成果物)
+    ======================================== -->
+    <section class="py-16 md:py-24 bg-royal-blue-600">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Section Heading -->
+            <div class="mb-16">
+                <p class="text-center text-champagne-300 text-sm font-bold mb-4">組織の問題は「発見・行動・共有」の3ステップで解決します</p>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center text-white mb-4 leading-snug">
+                    実践会の終了後、<br>
+                    御社の手元には<span class="text-champagne-400">「3つの道具」</span>が残ります。
+                </h2>
+                <p class="text-center text-white/60 text-lg">持ち帰れる成果物</p>
+            </div>
+
+            <!-- Deliverables Stack -->
+            <div class="space-y-8">
+                <!-- Deliverable 1 -->
+                <div
+                    class="bg-white rounded-2xl p-6 md:p-8 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-full md:w-1/3 flex-shrink-0">
+                            <!-- Image -->
+                            <img src="images/deliverable-1-jp.png" alt="会社の「詰まり」発見シート"
+                                class="w-full h-auto rounded-lg shadow-md border border-stone-100 transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <div class="flex items-center gap-4 mb-4">
+                                <span
+                                    class="w-10 h-10 gradient-gold rounded-lg flex-shrink-0 flex items-center justify-center text-white font-bold text-lg shadow-md">1</span>
+                                <h3 class="text-xl md:text-2xl font-bold text-royal-blue-800">
+                                    会社の「詰まり」発見シート<br><span
+                                        class="text-champagne-600 text-base font-normal">（現状分析）</span>
+                                </h3>
+                            </div>
+                            <p class="text-royal-blue-700 leading-relaxed text-lg">
+                                これまで「なんとなく」感じていた問題点が、一枚の紙に可視化されます。<br>
+                                <strong
+                                    class="text-royal-blue-900 bg-champagne-50 px-1">「あ、ここで仕事が止まっていたのか！」</strong>と、全員が納得する事実が浮き彫りになります。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deliverable 2 -->
+                <div
+                    class="bg-white rounded-2xl p-6 md:p-8 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-full md:w-1/3 flex-shrink-0">
+                            <!-- Image -->
+                            <img src="images/deliverable-2-jp.png" alt="明日からの行動計画表"
+                                class="w-full h-auto rounded-lg shadow-md border border-stone-100 transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <div class="flex items-center gap-4 mb-4">
+                                <span
+                                    class="w-10 h-10 gradient-gold rounded-lg flex-shrink-0 flex items-center justify-center text-white font-bold text-lg shadow-md">2</span>
+                                <h3 class="text-xl md:text-2xl font-bold text-royal-blue-800">
+                                    明日からの「行動計画表」<br><span
+                                        class="text-champagne-600 text-base font-normal">（実行プラン）</span>
+                                </h3>
+                            </div>
+                            <p class="text-royal-blue-700 leading-relaxed text-lg">
+                                精神論ではなく、行動計画まで落とし込みます。<br>
+                                <strong
+                                    class="text-royal-blue-900 bg-champagne-50 px-1">「誰が・いつまでに・何をやるか」</strong>が明確になるため、言い逃れや放置がなくなります。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deliverable 3 -->
+                <div
+                    class="bg-white rounded-2xl p-6 md:p-8 shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-full md:w-1/3 flex-shrink-0">
+                            <!-- Image -->
+                            <img src="images/deliverable-3-jp.png" alt="ズレ解消マップ"
+                                class="w-full h-auto rounded-lg shadow-md border border-stone-100 transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <div class="flex items-center gap-4 mb-4">
+                                <span
+                                    class="w-10 h-10 gradient-gold rounded-lg flex-shrink-0 flex items-center justify-center text-white font-bold text-lg shadow-md">3</span>
+                                <h3 class="text-xl md:text-2xl font-bold text-royal-blue-800">
+                                    社長と現場の「ズレ」解消マップ<br><span
+                                        class="text-champagne-600 text-base font-normal">（共通言語）</span>
+                                </h3>
+                            </div>
+                            <p class="text-royal-blue-700 leading-relaxed text-lg">
+                                同じ図面を見ることで、社長の視点と現場の視点が初めてリンクします。<br>
+                                <strong
+                                    class="text-royal-blue-900 bg-champagne-50 px-1">「社長の言っている意味がやっと分かりました」</strong>という言葉が、現場から生まれます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         6. TESTIMONIALS / CASE STUDIES SECTION
+         ※ 仮の内容です。後でヒアリング後に差し替えてください。
+    ======================================== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Section Heading -->
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-4 leading-snug text-royal-blue-900">
+                    なぜ彼らは「もっと早く出会いたかった」<br>と言ったのか
+                </h2>
+                <p class="text-center text-royal-blue-700 text-lg">※ 守秘義務の関係上、一部匿名とさせていただいております</p>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="space-y-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-stone-100 rounded-2xl p-6 md:p-8">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <!-- Avatar Placeholder -->
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-20 h-20 bg-royal-blue-200 rounded-full flex items-center justify-center mx-auto md:mx-0">
+                                <span class="text-royal-blue-500 text-2xl">👤</span>
+                            </div>
+                        </div>
+                        <!-- Content -->
+                        <div class="flex-1">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="bg-royal-blue-600 text-white text-xs px-3 py-1 rounded-full">製造業</span>
+                                <span
+                                    class="bg-champagne-400 text-royal-blue-900 text-xs px-3 py-1 rounded-full">従業員15名</span>
+                            </div>
+                            <p class="text-royal-blue-700 leading-relaxed mb-4">
+                                <span class="text-2xl text-champagne-500 font-serif">"</span>
+                                正直、最初は「また研修か…」と思っていました。でも、たった3時間で<strong
+                                    class="text-royal-blue-900">会議の時間が月20時間→5時間に激減</strong>。社員が自分から動くようになり、私の負担が劇的に減りました。
+                                <span class="text-2xl text-champagne-500 font-serif">"</span>
+                            </p>
+                            <p class="text-right text-royal-blue-700 text-sm">— A社 代表取締役 様</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-stone-100 rounded-2xl p-6 md:p-8">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <!-- Avatar Placeholder -->
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-20 h-20 bg-royal-blue-200 rounded-full flex items-center justify-center mx-auto md:mx-0">
+                                <span class="text-royal-blue-500 text-2xl">👤</span>
+                            </div>
+                        </div>
+                        <!-- Content -->
+                        <div class="flex-1">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="bg-royal-blue-600 text-white text-xs px-3 py-1 rounded-full">サービス業</span>
+                                <span
+                                    class="bg-champagne-400 text-royal-blue-900 text-xs px-3 py-1 rounded-full">従業員8名</span>
+                            </div>
+                            <p class="text-royal-blue-700 leading-relaxed mb-4">
+                                <span class="text-2xl text-champagne-500 font-serif">"</span>
+                                「なぜ伝わらないのか」がずっと分からなかったのですが、図に描いてもらった瞬間、<strong
+                                    class="text-royal-blue-900">私と現場のズレがハッキリ見えました</strong>。あの時の「あぁ…！」という感覚は忘れられません。
+                                <span class="text-2xl text-champagne-500 font-serif">"</span>
+                            </p>
+                            <p class="text-right text-royal-blue-700 text-sm">— B社 代表取締役 様</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-stone-100 rounded-2xl p-6 md:p-8">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <!-- Avatar Placeholder -->
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-20 h-20 bg-royal-blue-200 rounded-full flex items-center justify-center mx-auto md:mx-0">
+                                <span class="text-royal-blue-500 text-2xl">👤</span>
+                            </div>
+                        </div>
+                        <!-- Content -->
+                        <div class="flex-1">
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="bg-royal-blue-600 text-white text-xs px-3 py-1 rounded-full">建設業</span>
+                                <span
+                                    class="bg-champagne-400 text-royal-blue-900 text-xs px-3 py-1 rounded-full">従業員22名</span>
+                            </div>
+                            <p class="text-royal-blue-700 leading-relaxed mb-4">
+                                <span class="text-2xl text-champagne-500 font-serif">"</span>
+                                ベテラン職人の「頭の中」を初めて見える形にできました。おかげで<strong
+                                    class="text-royal-blue-900">引き継ぎがスムーズに</strong>なり、若手の離職も減りました。もっと早く出会いたかった。
+                                <span class="text-2xl text-champagne-500 font-serif">"</span>
+                            </p>
+                            <p class="text-right text-royal-blue-700 text-sm">— C社 代表取締役 様</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Summary -->
+            <div class="mt-12 bg-gradient-to-r from-royal-blue-600 to-royal-blue-700 rounded-2xl p-6 md:p-8">
+                <h3 class="text-center text-white font-bold text-lg mb-2">導入企業様の実績（一部）</h3>
+                <p class="text-center text-white/60 text-xs mb-6">※ 2020年〜2024年の導入企業アンケート集計（n=127社）</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="bg-white/10 rounded-xl p-4">
+                        <p class="text-champagne-400 text-2xl md:text-3xl font-bold">85%</p>
+                        <p class="text-white/70 text-xs mt-1">会議時間の削減<br><span class="text-white/50">（平均値）</span></p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-4">
+                        <p class="text-champagne-400 text-2xl md:text-3xl font-bold">92%</p>
+                        <p class="text-white/70 text-xs mt-1">参加者満足度<br><span class="text-white/50">（とても満足+満足）</span>
+                        </p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-4">
+                        <p class="text-champagne-400 text-2xl md:text-3xl font-bold">3ヶ月</p>
+                        <p class="text-white/70 text-xs mt-1">平均で効果実感<br><span class="text-white/50">（導入後）</span></p>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-4">
+                        <p class="text-champagne-400 text-2xl md:text-3xl font-bold">150社+</p>
+                        <p class="text-white/70 text-xs mt-1">累計導入企業数<br><span class="text-white/50">（2024年末時点）</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         7. RECOMMENDED FOR SECTION
+    ======================================== -->
+    <section class="py-16 md:py-24 bg-stone-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Section Heading -->
+            <div class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-4 leading-snug text-royal-blue-900">
+                    当てはまる方だけ、お読みください
+                </h2>
+                <p class="text-center text-royal-blue-700 text-lg">この実践会が効果を発揮する企業の特徴</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Recommended -->
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-t-4 border-green-500">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-3xl">✅</span>
+                        <h3 class="text-xl font-bold text-royal-blue-800">こんな経営者様におすすめ</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <span class="text-green-500 mt-1">✔</span>
+                            <span class="text-royal-blue-700">会議で結論が出ず、<strong
+                                    class="text-royal-blue-900">同じ話が何度も繰り返される</strong></span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-green-500 mt-1">✔</span>
+                            <span class="text-royal-blue-700">社員が<strong
+                                    class="text-royal-blue-900">何を考えているか分からない</strong>と感じる</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-green-500 mt-1">✔</span>
+                            <span class="text-royal-blue-700"><strong
+                                    class="text-royal-blue-900">自分がいないと会社が回らない</strong>気がする</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-green-500 mt-1">✔</span>
+                            <span class="text-royal-blue-700">ベテランの<strong
+                                    class="text-royal-blue-900">ノウハウが属人化</strong>していて困っている</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-green-500 mt-1">✔</span>
+                            <span class="text-royal-blue-700">「伝えたつもり」なのに<strong
+                                    class="text-royal-blue-900">伝わっていない</strong>ことが多い</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Not Recommended -->
+                <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-t-4 border-gray-400">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-3xl">❌</span>
+                        <h3 class="text-xl font-bold text-royal-blue-800">こんな方には向いていません</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <span class="text-gray-400 mt-1">✕</span>
+                            <span class="text-royal-blue-700">「社員は黙って従えばいい」とお考えの方</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-gray-400 mt-1">✕</span>
+                            <span class="text-royal-blue-700">組織課題がゼロだと確信している方</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-gray-400 mt-1">✕</span>
+                            <span class="text-royal-blue-700">3時間も社員の時間を割く気がない方</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-gray-400 mt-1">✕</span>
+                            <span class="text-royal-blue-700">「研修は受けさせればOK」だと思っている方</span>
+                        </li>
+                    </ul>
+                    <p class="mt-6 text-sm text-royal-blue-500 bg-stone-100 p-3 rounded-lg">
+                        ※ 本気で変わりたい方だけ、お申込みください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         8. INSTRUCTOR PROFILE & STORY SECTION
+    ======================================== -->
+    <section class="py-16 md:py-24 bg-champagne-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Section Heading -->
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-4 leading-snug text-royal-blue-900">
+                    複雑なことも、図にすればシンプルになる。
+                </h2>
+                <p class="text-center text-royal-blue-700 text-lg">ドン底から這い上がるために私が使った「1枚の紙とペン」。</p>
+            </div>
+
+            <!-- Profile & Story -->
+            <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-start mb-12">
+                <!-- Photo -->
+                <div class="flex-shrink-0 mx-auto md:mx-0 flex flex-col gap-6">
+                    <!-- Image 1 (Original Position) -->
+                    <div class="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-lg">
+                        <img src="images/prof.jpg" alt="講師写真1" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Image 2 (Red Frame Area) -->
+                    <div class="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-lg border-4 border-white">
+                        <img src="images/prof2.jpg" alt="講師写真2" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <!-- Story & Profile -->
+                <div class="flex-1">
+                    <!-- Story -->
+                    <div class="mb-8">
+                        <p class="text-royal-blue-700 leading-relaxed mb-4">
+                            私はかつて、建築の仕事で図面を描いていました。<br>
+                            その経験から学んだのは、<strong
+                                class="text-royal-blue-900">「どんな複雑な建物も、1枚の図があれば全員が動ける」</strong>というシンプルな事実です。
+                        </p>
+                        <p
+                            class="text-royal-blue-700 leading-relaxed mb-4 text-sm border-l-4 border-champagne-400 pl-4 bg-champagne-50 py-3">
+                            40代で病を患い、離婚も経験しました。仕事も家庭も、すべてが崩れ落ちた時期です。<br>
+                            藁にもすがる思いで始めたのが、<strong
+                                class="text-royal-blue-900">頭の中のモヤモヤを全て紙に書き出す</strong>という単純な作業でした。<br>
+                            書いて、眺めて、整理する。それだけで、驚くほど冷静に次の一手が見えてきたのです。<br>
+                            <span class="text-royal-blue-600">この「可視化」の力が、私をドン底から引き上げてくれました。</span>
+                        </p>
+                        <p class="text-royal-blue-700 leading-relaxed">
+                            この実践会でお伝えするのは、私の特別な才能ではありません。<br>
+                            <strong class="text-royal-blue-900">「書き出して、目で見て、整理する」</strong>。<br>
+                            ただそれだけで、驚くほど組織が回り出す「現場の知恵」です。
+                        </p>
+                    </div>
+
+                    <!-- Profile Info -->
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <p class="text-champagne-600 text-sm font-bold mb-2">講師プロフィール</p>
+                        <h3 class="text-2xl font-serif font-bold text-royal-blue-800 mb-1">吉田 多絵</h3>
+                        <p class="text-royal-blue-700 text-sm mb-4">株式会社i-SKYシステムズ代表 / 可視化経営アドバイザー</p>
+                        <ul class="space-y-2 text-royal-blue-700 text-sm">
+                            <li class="flex items-center gap-2">
+                                <span class="text-champagne-500">●</span>
+                                元・建築設計士
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-champagne-500">●</span>
+                                株式会社ラメリア・ジャパン 創業相談役
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-champagne-500">●</span>
+                                研修実績：25年（延べ20,000人以上受講）
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Section -->
+            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+                <p class="text-champagne-600 text-sm font-bold mb-6">著書紹介</p>
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <img src="images/book-cover.png" alt="可視化思考術"
+                        class="w-40 h-auto rounded-lg shadow-lg flex-shrink-0 mx-auto md:mx-0">
+                    <div>
+                        <h4 class="text-xl font-bold text-royal-blue-800 mb-2">「可視化思考術」</h4>
+                        <p class="text-royal-blue-700 text-sm mb-4">理想の未来を現実にする 書いて描いて俯瞰する</p>
+
+                        <p class="text-royal-blue-700 text-sm leading-relaxed mb-4">
+                            「会議で決めたことが実行されない」「課題が多すぎて優先順位が見えない」──その原因は<strong
+                                class="text-royal-blue-900">「可視化」の欠如</strong>にあります。本書では、20,000人以上の研修実績をもとに、<strong
+                                class="text-royal-blue-900">複雑な情報を1枚の紙に整理し、スタッフが自ら動き出す組織</strong>を作る具体的メソッドを公開。実践会で使う「可視化フレームワーク」の基本が学べます。
+                        </p>
+
+                        <p class="text-royal-blue-500 text-xs">AmazonよりKindle出版</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         7. FLOW & PRICE SECTION (サービスの流れ・価格)
+    ======================================== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Section Heading -->
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-4 leading-snug text-royal-blue-900">
+                    わずか3時間で、組織の「地図」が完成します。
+                </h2>
+                <p class="text-center text-royal-blue-700 text-lg mb-2">3時間の集中セッション＋その後の定着サポート</p>
+                <p class="text-center text-royal-blue-500 text-sm">導入までスムーズな4ステップ</p>
+            </div>
+
+            <!-- Vertical Timeline -->
+            <div class="relative max-w-2xl mx-auto">
+                <!-- Vertical Line -->
+                <div
+                    class="absolute left-6 md:left-8 top-8 bottom-8 w-0.5 bg-gradient-to-b from-royal-blue-300 via-royal-blue-400 to-champagne-400">
+                </div>
+
+                <div class="space-y-0">
+                    <!-- Step 1 -->
+                    <div class="relative flex gap-6 md:gap-8 pb-8">
+                        <div class="flex-shrink-0 z-10">
+                            <div
+                                class="w-12 h-12 md:w-16 md:h-16 bg-royal-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                                <span class="text-champagne-400 font-bold text-lg md:text-xl">01</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-2">
+                            <h4 class="font-bold text-royal-blue-800 text-lg mb-2">無料個別相談</h4>
+                            <p class="text-royal-blue-700">現状の課題をヒアリングし、可視化の可能性を模索します。</p>
+                        </div>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="pl-6 md:pl-8 -mt-4 mb-4 text-royal-blue-300 text-2xl">↓</div>
+
+                    <!-- Step 2 -->
+                    <div class="relative flex gap-6 md:gap-8 pb-8">
+                        <div class="flex-shrink-0 z-10">
+                            <div
+                                class="w-12 h-12 md:w-16 md:h-16 bg-royal-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                                <span class="text-champagne-400 font-bold text-lg md:text-xl">02</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-2">
+                            <h4 class="font-bold text-royal-blue-800 text-lg mb-2">実践プラン作成<span
+                                    class="text-sm font-normal text-royal-blue-700 ml-2">（組織診断）</span></h4>
+                            <p class="text-royal-blue-700">現場インタビューと数値分析からボトルネックを特定し、御社専用のプランを作ります。</p>
+                        </div>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="pl-6 md:pl-8 -mt-4 mb-4 text-royal-blue-300 text-2xl">↓</div>
+
+                    <!-- Step 3 -->
+                    <div class="relative flex gap-6 md:gap-8 pb-8">
+                        <div class="flex-shrink-0 z-10">
+                            <div
+                                class="w-12 h-12 md:w-16 md:h-16 bg-royal-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                                <span class="text-champagne-400 font-bold text-lg md:text-xl">03</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-2">
+                            <h4 class="font-bold text-royal-blue-800 text-lg mb-2">実践会開催<span
+                                    class="text-sm font-normal text-royal-blue-700 ml-2">（約3時間）</span></h4>
+                            <p class="text-royal-blue-700">集中プログラムで、自社の「地図」を作成します。</p>
+                        </div>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="pl-6 md:pl-8 -mt-4 mb-4 text-champagne-400 text-2xl">↓</div>
+
+                    <!-- Step 4 -->
+                    <div class="relative flex gap-6 md:gap-8">
+                        <div class="flex-shrink-0 z-10">
+                            <div
+                                class="w-12 h-12 md:w-16 md:h-16 gradient-gold rounded-full flex items-center justify-center shadow-lg">
+                                <span class="text-white font-bold text-lg md:text-xl">04</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-2">
+                            <h4 class="font-bold text-royal-blue-800 text-lg mb-2">アフターフォロー<span
+                                    class="text-sm font-normal text-royal-blue-700 ml-2">（定着支援）</span></h4>
+                            <p class="text-royal-blue-700">現場への落とし込みと運用を支援します。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Section -->
+            <div class="mt-16 bg-stone-100 rounded-2xl p-8 md:p-10">
+                <h3 class="text-center text-lg font-bold text-royal-blue-800 mb-2">投資とリターン</h3>
+                <p class="text-center text-royal-blue-600 text-sm mb-6">会議時間の削減分だけで1ヶ月で元が取れる企業がほとんどです</p>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white rounded-xl p-6 text-center shadow-md">
+                        <p class="text-royal-blue-700 text-sm mb-2">10名以下</p>
+                        <p class="text-3xl font-bold text-royal-blue-800"><span class="text-xl">¥</span>98,000<span
+                                class="text-base font-normal">〜</span></p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 text-center shadow-md border-2 border-champagne-400">
+                        <p class="text-royal-blue-700 text-sm mb-2">10名〜20名</p>
+                        <p class="text-3xl font-bold text-royal-blue-800"><span class="text-xl">¥</span>198,000<span
+                                class="text-base font-normal">〜</span></p>
+                    </div>
+                </div>
+                <p class="text-center text-royal-blue-700 text-sm">
+                    ※各種補助金の対象となる場合があります。まずはお気軽にご相談ください。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         8. RISK & FAQ SECTION
+    ======================================== -->
+    <!-- Risk Warning -->
+    <section class="py-16 md:py-20 bg-royal-blue-700">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <div class="inline-block bg-yellow-400 text-royal-blue-900 font-bold px-4 py-1 rounded-full text-sm mb-8">
+                ⚠️ 警告
+            </div>
+            <h2 class="text-2xl md:text-3xl font-serif font-bold text-white mb-8 leading-relaxed">
+                「地図」を持たない経営を、<br>あと何年続けますか？
+            </h2>
+            <p class="text-white/80 leading-relaxed text-lg">
+                優秀な社員ほど、<strong class="text-yellow-300">「ゴールの見えないマラソン」には絶望して去っていきます。</strong><br><br>
+                人手不足の今、採用コストをかける前に、<br class="hidden md:block">
+                まずは<strong class="text-white">「今いる社員が迷わない地図」</strong>を渡すこと。<br>
+                それが、最も確実な投資です。
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 bg-stone-100">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center leading-snug text-royal-blue-900">
+                    はじめての方が必ず聞く3つのこと
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <details class="bg-white rounded-xl shadow-sm group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <span class="font-bold text-royal-blue-800 flex items-center gap-3">
+                            <span class="text-champagne-500 text-xl">Q.</span>
+                            うちの社員は口下手で、意見が出てこないと思いますが大丈夫ですか？
+                        </span>
+                        <span
+                            class="text-champagne-500 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-royal-blue-700">
+                        <p class="flex items-center gap-3">
+                            <span class="text-royal-blue-500 font-bold">A.</span>
+                            <span>はい、全く問題ありません。いきなり発言させるのではなく<strong>「付箋に書く」作業から始めます</strong>。口頭では言いにくいことも、書くことなら驚くほどスムーズに出てきます。</span>
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="bg-white rounded-xl shadow-sm group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <span class="font-bold text-royal-blue-800 flex items-center gap-3">
+                            <span class="text-champagne-500 text-xl">Q.</span>
+                            現場が忙しく、3時間も全員の時間を取るのが難しいです。
+                        </span>
+                        <span
+                            class="text-champagne-500 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-royal-blue-700">
+                        <p class="flex items-center gap-3">
+                            <span class="text-royal-blue-500 font-bold">A.</span>
+                            <span>無駄な会議を繰り返す時間と比べてみてください。<strong>たった1回の整理で、その後の会議時間が大幅に短縮</strong>され、仕事の効率が上がります。</span>
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="bg-white rounded-xl shadow-sm group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <span class="font-bold text-royal-blue-800 flex items-center gap-3">
+                            <span class="text-champagne-500 text-xl">Q.</span>
+                            社長も参加する必要がありますか？
+                        </span>
+                        <span
+                            class="text-champagne-500 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-royal-blue-700">
+                        <p class="flex items-center gap-3">
+                            <span class="text-royal-blue-500 font-bold">A.</span>
+                            <span>はい、可能な限りご参加ください。<strong>認識のズレを解消する絶好の機会</strong>です。</span>
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SCARCITY / URGENCY SECTION
+    ======================================== -->
+    <section class="py-12 md:py-16 bg-gradient-to-r from-amber-600 to-amber-700">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center">
+                <!-- Badge -->
+                <div
+                    class="inline-flex items-center gap-2 bg-white text-amber-700 font-bold px-6 py-2 rounded-full text-sm mb-6 shadow-lg">
+                    <span class="text-lg">⚡</span>
+                    毎月先着3社限定
+                </div>
+
+                <!-- Heading -->
+                <h2
+                    class="text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-snug text-center md:text-center">
+                    なぜ月に3社までなのか
+                </h2>
+
+                <!-- Reason -->
+                <p class="text-white/90 leading-relaxed mb-8 max-w-2xl mx-auto">
+                    一社一社に丁寧に向き合うため、<strong class="text-yellow-300">月間3社まで</strong>の受付とさせていただいております。<br>
+                    お問い合わせ順にご案内しておりますので、ご検討中の方はお早めにご連絡ください。
+                </p>
+
+                <!-- Stats / Social Proof -->
+                <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-8">
+                    <div class="bg-white/10 backdrop-blur rounded-xl px-6 py-3">
+                        <p class="text-yellow-300 text-2xl font-bold">残り 2社</p>
+                        <p class="text-white/70 text-xs">今月の受付枠</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-xl px-6 py-3">
+                        <p class="text-white text-2xl font-bold">平均2週間待ち</p>
+                        <p class="text-white/70 text-xs">お申込みから開催まで</p>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <a href="#contact"
+                    class="inline-block bg-white text-amber-700 font-bold text-lg px-10 py-4 rounded-xl shadow-xl hover:bg-amber-50 transition-all hover:-translate-y-1 hover:shadow-2xl">
+                    今すぐ無料相談を申し込む →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT FORM SECTION
+    ======================================== -->
+    <section id="contact" class="py-16 md:py-24 bg-gradient-to-b from-white to-champagne-50">
+        <div class="max-w-2xl mx-auto px-4">
+            <!-- Heading -->
+            <div class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-4 leading-snug text-royal-blue-900">
+                    「見えない」問題は、誰にも直せません。
+                </h2>
+                <p class="text-center text-lg text-royal-blue-700">
+                    御社の課題を可視化し、次の一手を明確にする3時間です。
+                </p>
+            </div>
+
+            <!-- Micro-copy -->
+            <div class="bg-stone-100 rounded-xl p-6 mb-10 text-center border border-royal-blue-100">
+                <p class="text-royal-blue-700">
+                    <strong class="text-royal-blue-800">売り込みは一切いたしません。</strong><br>
+                    まずは御社の現状をヒアリングいたします。
+                </p>
+            </div>
+
+            <!-- Form -->
+            <form class="space-y-6 bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+                <div>
+                    <label class="block text-sm font-bold text-royal-blue-800 mb-2">会社名 <span
+                            class="text-red-500">*</span></label>
+                    <input type="text" required
+                        class="w-full px-4 py-3 border border-royal-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-champagne-400 focus:border-transparent"
+                        placeholder="株式会社〇〇">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-royal-blue-800 mb-2">お名前（代表者様） <span
+                            class="text-red-500">*</span></label>
+                    <input type="text" required
+                        class="w-full px-4 py-3 border border-royal-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-champagne-400 focus:border-transparent"
+                        placeholder="山田 太郎">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-royal-blue-800 mb-2">メールアドレス <span
+                            class="text-red-500">*</span></label>
+                    <input type="email" required
+                        class="w-full px-4 py-3 border border-royal-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-champagne-400 focus:border-transparent"
+                        placeholder="example@company.co.jp">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-royal-blue-800 mb-2">お電話番号 <span
+                            class="text-red-500">*</span></label>
+                    <input type="tel" required
+                        class="w-full px-4 py-3 border border-royal-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-champagne-400 focus:border-transparent"
+                        placeholder="090-1234-5678">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-royal-blue-800 mb-3">ご相談内容</label>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox"
+                                class="w-5 h-5 rounded border-royal-blue-300 text-champagne-500 focus:ring-champagne-400">
+                            <span class="text-royal-blue-700">まずは資料だけ見てみたい</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox"
+                                class="w-5 h-5 rounded border-royal-blue-300 text-champagne-500 focus:ring-champagne-400">
+                            <span class="text-royal-blue-700">電話やZoomで相談したい</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox"
+                                class="w-5 h-5 rounded border-royal-blue-300 text-champagne-500 focus:ring-champagne-400">
+                            <span class="text-royal-blue-700">実践会の詳細（費用やカリキュラム）を知りたい</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox"
+                                class="w-5 h-5 rounded border-royal-blue-300 text-champagne-500 focus:ring-champagne-400">
+                            <span class="text-royal-blue-700">その他</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-royal-blue-800 mb-2">自由記入欄</label>
+                    <textarea rows="4"
+                        class="w-full px-4 py-3 border border-royal-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-champagne-400 focus:border-transparent"
+                        placeholder="ご質問やご希望がございましたらご記入ください"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full gradient-gold text-white font-bold text-lg py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 mt-4">
+                    送信して無料相談を申し込む
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========================================
+         P.S. (POSTSCRIPT) SECTION
+    ======================================== -->
+    <section class="py-12 md:py-16 bg-champagne-50">
+        <div class="max-w-2xl mx-auto px-4">
+            <div class="bg-white rounded-2xl p-8 md:p-10 shadow-lg relative overflow-hidden">
+                <!-- Decorative corner -->
+                <div class="absolute top-0 right-0 w-24 h-24 bg-champagne-100 rounded-bl-full opacity-50"></div>
+
+                <!-- Content -->
+                <div class="relative">
+                    <p
+                        class="inline-block bg-champagne-100 text-champagne-700 font-bold px-4 py-1 rounded-full text-sm mb-6">
+                        追伸</p>
+
+                    <p class="text-royal-blue-700 leading-loose mb-5 text-base">
+                        ここまで読んでくださった方は、きっと<strong class="text-royal-blue-900">「変わりたい」</strong>という気持ちがあるはずです。
+                    </p>
+                    <p class="text-royal-blue-700 leading-loose mb-5 text-base">
+                        その気持ちが、<strong class="text-royal-blue-900">今この瞬間が一番強い</strong>。<br>
+                        「あとで…」と思ったら、このページのことは忘れてしまいます。
+                    </p>
+                    <p class="text-royal-blue-700 leading-loose mb-8 text-base">
+                        まずは30分の無料相談から。お気軽にどうぞ。
+                    </p>
+
+                    <!-- Signature -->
+                    <div class="flex items-end justify-end gap-4">
+                        <div class="text-right">
+                            <p class="text-royal-blue-500 text-xs mb-1">可視化経営アドバイザー</p>
+                            <p class="text-royal-blue-800 font-serif font-bold text-lg">吉田 多絵</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer class="py-10 bg-royal-blue-700">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Back to Top Link (Mobile Only) -->
+            <div class="md:hidden text-center mb-8">
+                <a href="#"
+                    class="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors">
+                    <span>↑</span>
+                    <span>トップへ戻る</span>
+                </a>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <!-- Logo -->
+                <img src="images/logo2.png" alt="i-SKYシステムズ" class="h-12 mb-6 brightness-0 invert">
+
+                <!-- Company Info -->
+                <p class="text-white/80 text-sm mb-2">株式会社i-SKYシステムズ</p>
+                <p class="text-white/60 text-xs mb-6">〒460-0008 名古屋市中区新栄3-20-27-1608</p>
+
+                <!-- Copyright -->
+                <p class="text-white/40 text-xs">
+                    Copyright © i-SKY Systems Corporation. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button (PC Only) -->
+    <a href="#"
+        class="hidden md:flex fixed bottom-8 right-8 w-12 h-12 gradient-gold text-white rounded-full items-center justify-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 z-50"
+        aria-label="ページトップへ戻る">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+</body>
+
+</html>
