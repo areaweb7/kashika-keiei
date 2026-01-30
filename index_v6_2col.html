@@ -112,7 +112,7 @@
     <section class="md:hidden pt-14 bg-white">
         <!-- Hero Image (Mobile) -->
         <div class="w-full">
-            <img src="images/hero-bg-concept.png" alt="「絡まった糸」が「地図」に変わるイメージ" class="w-full h-auto object-cover">
+            <img src="images/hero-tangled.png" alt="「絡まった糸」が「地図」に変わるイメージ" class="w-full h-auto object-cover">
         </div>
         <!-- Content (Mobile) -->
         <div class="bg-royal-blue-600 px-4 py-8">
@@ -139,37 +139,37 @@
         </div>
     </section>
 
-    <!-- Desktop Hero (Background Image Overlay with Center Text) -->
-    <section class="hidden md:flex relative min-h-screen items-center pt-20">
-        <!-- Background Image -->
-        <div class="absolute inset-0 z-0">
-            <img src="images/hero-bg-concept.png" alt="「絡まった糸」が「地図」に変わるイメージ"
-                class="w-full h-full object-cover object-center">
-            <div class="absolute inset-0 bg-royal-blue-900/80">
+    <!-- Desktop Hero (Side-by-Side: Text Left, Image Right) -->
+    <section class="hidden md:flex relative min-h-screen items-center bg-white pt-20">
+        <div class="max-w-7xl mx-auto px-6 w-full flex items-center gap-12">
+            <!-- Content (Left) -->
+            <div class="w-1/2 ">
+                <!-- Main Catch -->
+                <h1 class="text-6xl font-serif font-bold mb-8 text-royal-blue-900 leading-tight tracking-tight">
+                    経営に、<br>地図を。
+                </h1>
+
+                <!-- Sub Catch -->
+                <p class="text-2xl text-royal-blue-700 mb-10 leading-relaxed font-medium">
+                    社員のやる気に頼らず、<br>
+                    現場が自走する仕組みをつくる<br>
+                    <strong class="text-royal-blue-900 bg-champagne-50 px-2 py-1">「可視化経営」実践会</strong>
+                </p>
+
+                <!-- CTA Button -->
+                <div>
+                    <a href="#contact"
+                        class="inline-block gradient-gold text-white font-bold text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 hover:opacity-90">
+                        無料相談で、<br>自社専用の「地図」を描いてみる
+                    </a>
+                    <p class="text-royal-blue-400 text-sm mt-4 pl-2">（3分で入力完了）</p>
+                </div>
             </div>
-        </div>
 
-        <!-- Content -->
-        <div class="relative z-10 w-full max-w-5xl mx-auto px-4 py-16 text-center">
-            <!-- Main Catch -->
-            <h1 class="text-6xl md:text-7xl font-serif font-bold mb-8 text-white leading-tight tracking-wide">
-                経営に、地図を。
-            </h1>
-
-            <!-- Sub Catch -->
-            <p class="text-2xl md:text-3xl text-white/90 mb-12 leading-relaxed font-medium">
-                社員のやる気に頼らず、<br>
-                現場が自走する仕組みをつくる<br>
-                <strong class="text-champagne-300">「可視化経営」実践会</strong>
-            </p>
-
-            <!-- CTA Button -->
-            <div>
-                <a href="#contact"
-                    class="inline-block gradient-gold text-white font-bold text-xl px-12 py-6 rounded-lg shadow-2xl hover:shadow-xl transition-all hover:-translate-y-1 hover:opacity-95">
-                    無料相談で、<br>自社専用の「地図」を描いてみる
-                </a>
-                <p class="text-white/60 text-sm mt-4">（3分で入力完了）</p>
+            <!-- Image (Right) -->
+            <div class="w-1/2">
+                <img src="images/hero-tangled.png" alt="「絡まった糸」が「地図」に変わるイメージ"
+                    class="w-full h-auto object-contain drop-shadow-2xl">
             </div>
         </div>
     </section>
@@ -277,11 +277,6 @@
     <!-- ========================================
          4. COMPARISON SECTION (比較・解決策)
     ======================================== -->
-
-
-    <!-- ========================================
-         4. COMPARISON SECTION (比較・解決策)
-    ======================================== -->
     <section class="py-16 md:py-28 bg-stone-100">
         <div class="max-w-4xl mx-auto px-4">
             <!-- Bridge Text -->
@@ -299,14 +294,12 @@
                 <p class="text-center text-royal-blue-700 text-lg">「精神論」と「可視化（見える化）」の決定的な違い</p>
             </div>
 
-            <!-- Visual: Workshop Scene -->
+            <!-- Visual: Before/After Chaos Map -->
             <div class="mb-12">
-                <div class="relative rounded-xl overflow-hidden shadow-xl" style="aspect-ratio: 16/9;">
-                    <img src="images/hero-workshop.png" alt="可視化経営の実践会風景" class="w-full h-full object-cover">
-                    <!-- Optional: Subtle blue tint to match brand if desired, but kept clear for now based on 'normal image' request -->
-                    <div class="absolute inset-0 bg-royal-blue-900/10 mix-blend-multiply"></div>
-                </div>
+                <img src="images/Gemini_Generated_Image_wwkorawwkorawwko.jpg" alt="混乱から可視化へのビフォーアフター"
+                    class="w-full max-w-3xl mx-auto rounded-lg shadow-none">
             </div>
+
             <!-- Comparison Table -->
             <div class="grid md:grid-cols-2 gap-6 mb-12">
                 <!-- Left: Traditional Training (×) -->
@@ -1031,7 +1024,7 @@
             <!-- Heading -->
             <div class="mb-8">
                 <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-4 leading-snug text-royal-blue-900">
-                    <span class="inline-block">「見えない」問題は、</span><span class="inline-block">誰にも直せません。</span>
+                    「見えない」問題は、誰にも直せません。
                 </h2>
                 <p class="text-center text-lg text-royal-blue-700">
                     御社の課題を可視化し、次の一手を明確にする3時間です。
